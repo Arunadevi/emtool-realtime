@@ -7,6 +7,8 @@
  * 'at'param model {gapi.drive.realtime.Model} the Realtime root model object.
  */
 function initializeModel(model) {
+  EMTool.ClustersModel = function() {}
+  gapi.drive.realtime.custom.registerType(EMTool.ClustersModel, 'ClustersModel');
   var string = model.createString('Hello Realtime World!');
   model.getRoot().set('text', string);
 }
