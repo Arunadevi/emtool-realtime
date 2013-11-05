@@ -88,7 +88,7 @@ function initializeModel(model) {
  */
 function onFileLoaded(doc) {
   vizdata = doc.getModel().getRoot().get('vizdata');
-  vizdata.addEventListener(gapi.drive.realtime.EventType.VALUE_CHANGED, doValueChanged);
+  vizdata.positions.addEventListener(gapi.drive.realtime.EventType.VALUES_ADDED, doValueChanged);
   var addButton = document.getElementById('addPos');
   addButton.onclick = function(e) {
     var position = {posId:posid, x:x,y:0, elementId:elemid}
