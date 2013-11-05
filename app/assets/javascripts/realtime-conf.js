@@ -40,9 +40,9 @@ var realtimeOptions = {
   onFileLoaded: onFileLoaded,
 
   /**
-   * Function to be called to inityalize custom Collaborative Objects types.
+   * Function to be called to initialize custom Collaborative Objects types.
    */
-  registerTypes: null, // No action.
+  registerTypes: registerTypes, // No action.
 
   /**
    * Function to be called after authorization and before loading files.

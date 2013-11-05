@@ -4,7 +4,7 @@
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-  <title>Google Drive Realtime quickstart</title>
+  <title>EM Tool</title>
   <meta http-equiv="X-UA-Compatible" content="IE=9">
 
   <!-- Load the Realtime libraries. -->
@@ -28,22 +28,11 @@
 <!-- Start Realtime when the body has loaded. -->
 <body onLoad='startRealtime()'>
 
-  <h1>Drive Realtime API :: quickstart</h1>
-
   <button id="authorizeButton" disabled>You must authorize</button>
 
-  <p>These text areas are on the same page. You can also <a target="_blank" href="#">open them on separate users'
-  browsers</a> and they will remain synchronized.</p>
+  <p>On clicking on the below button, random 'position' objects are added to the collaborative list. The length of the list is a proof of the collaborative feature.</p>
 
-  <!-- Text areas that will be used as our collaborative controls. -->
-  <textarea id="editor1" rows="15" cols="50" disabled="true"></textarea>
-  <textarea id="editor2" rows="15" cols="50" disabled="true"></textarea>
-  <br />
-
-  <!-- Undo and redo buttons. -->
-  <button id="undoButton" disabled>Undo</button>
-  <button id="redoButton" disabled>Redo</button>
-
+  <button id="addPos" >Add Pos</button>
   
 </body>
 </html>
